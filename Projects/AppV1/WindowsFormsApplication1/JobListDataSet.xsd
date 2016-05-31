@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="JobListDataSet" targetNamespace="http://tempuri.org/JobListDataSet.xsd" xmlns:mstns="http://tempuri.org/JobListDataSet.xsd" xmlns="http://tempuri.org/JobListDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="JobListConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="JobListConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApplication1.Properties.Settings.GlobalReference.Default.JobListConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="JobListTableAdapter" GeneratorDataComponentClassName="JobListTableAdapter" Name="JobListTable" UserDataComponentName="JobListTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="JobListConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillDataTable" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetDataFromTable" GeneratorSourceName="FillDataTable" GetMethodModifier="Public" GetMethodName="GetDataFromTable" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDataFromTable" UserSourceName="FillDataTable">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        1 AS Job1, 2 AS Job2, 3 AS Job4</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Job1" DataSetColumn="Job1" />
+              <Mapping SourceColumn="Job2" DataSetColumn="Job2" />
+              <Mapping SourceColumn="Job4" DataSetColumn="Job4" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="JobListDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="JobListDataSet" msprop:Generator_UserDSName="JobListDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="JobListTable" msprop:Generator_TableClassName="JobListTableDataTable" msprop:Generator_TableVarName="tableJobListTable" msprop:Generator_TablePropName="JobListTable" msprop:Generator_RowDeletingName="JobListTableRowDeleting" msprop:Generator_RowChangingName="JobListTableRowChanging" msprop:Generator_RowEvHandlerName="JobListTableRowChangeEventHandler" msprop:Generator_RowDeletedName="JobListTableRowDeleted" msprop:Generator_UserTableName="JobListTable" msprop:Generator_RowChangedName="JobListTableRowChanged" msprop:Generator_RowEvArgName="JobListTableRowChangeEvent" msprop:Generator_RowClassName="JobListTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JobThree" msprop:Generator_ColumnVarNameInTable="columnJobThree" msprop:Generator_ColumnPropNameInRow="JobThree" msprop:Generator_ColumnPropNameInTable="JobThreeColumn" msprop:Generator_UserColumnName="JobThree" type="xs:string" minOccurs="0" />
+              <xs:element name="Job1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnJob1" msprop:Generator_ColumnPropNameInRow="Job1" msprop:Generator_ColumnPropNameInTable="Job1Column" msprop:Generator_UserColumnName="Job1" type="xs:int" minOccurs="0" />
+              <xs:element name="Job2" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnJob2" msprop:Generator_ColumnPropNameInRow="Job2" msprop:Generator_ColumnPropNameInTable="Job2Column" msprop:Generator_UserColumnName="Job2" type="xs:int" minOccurs="0" />
+              <xs:element name="Job4" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnJob4" msprop:Generator_ColumnPropNameInRow="Job4" msprop:Generator_ColumnPropNameInTable="Job4Column" msprop:Generator_UserColumnName="Job4" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
